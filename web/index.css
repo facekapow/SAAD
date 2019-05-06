@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #404040;
+  color: #dfdfdf;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: sans-serif;
+}
+
+#showcase {
+  height: 100vh;
+  width: 20vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-flow: column nowrap;
+}
+
+#album-art {
+  width: 20vw;
+  height: 20vw;
+}
+
+#lists {
+  height: 100vh;
+  width: 80vw;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+#toolbar {
+  width: 80vw;
+  height: 5vh;
+}
+
+#back {
+  color: #156bcc !important;
+  text-decoration: none !important;
+
+  height: 5vh;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.5em;
+}
+
+#playlists, #tracklist-container {
+  height: 100vh;
+  width: 80vw;
+  top: 0;
+}
+
+#playlists, #tracklist-container {
+  position: absolute;
+  left: 100vw;
+
+  transition: 0.5s all ease-in-out;
+}
+
+#playlists, #tracklist {
+  overflow: auto;
+}
+
+#playlists.active, #tracklist-container.active {
+  left: 0;
+}
+
+#tracklist {
+  height: 95vh;
+  width: 80vw;
+}
+
+.track, .playlist {
+  padding: 0.5em;
+}
+
+.track > span, .playlist > span {
+  margin-bottom: 0.5em;
+}
+
+.artists > span {
+  margin-right: 0.5em;
+}
+
+.track > span {
+  font-size: 1.5em;
+}
+
+.playlist > span {
+  font-size: 1.25em;
+}

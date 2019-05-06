@@ -1,0 +1,39 @@
+{
+  "name": "saad",
+  "version": "1.0.0",
+  "description": "A simple tool that helps you easily find album art from Spotify.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test\"",
+    "build": "tsc",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facekapow/saad.git"
+  },
+  "keywords": [
+    "spotify",
+    "album",
+    "art",
+    "music",
+    "download",
+    "get",
+    "fetch",
+    "grab",
+    "cover"
+  ],
+  "author": "Ariel Abreu <facekapow@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/facekapow/saad/issues"
+  },
+  "homepage": "https://github.com/facekapow/saad#readme",
+  "dependencies": {
+    "spotify-web-api-js": "^1.2.0",
+    "typescript": "^3.4.5"
+  },
+  "devDependencies": {
+    "@types/spotify-web-api-js": "^0.21.0"
+  }
+}
